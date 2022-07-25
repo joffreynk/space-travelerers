@@ -1,6 +1,7 @@
 // header.js
 
 import '../index.css';
+import { Link } from 'react-router-dom';
 import logo from '../planet.png';
 
 export const Navbar = () => (
@@ -13,10 +14,21 @@ export const Navbar = () => (
     </div>
     <div className="menu">
       <ul>
-        <li>Rockets</li>
-        <li>Missions</li>
+        <li>
+          {' '}
+          <Link to="/">Rockets</Link>
+          {' '}
+        </li>
         <span>|</span>
-        <li>My Profile</li>
+        <li>
+          <Link to="missions">Missions</Link>
+          {' '}
+        </li>
+        <span>|</span>
+        <li>
+          <Link to="my-profile">My Profile</Link>
+          {' '}
+        </li>
       </ul>
     </div>
   </div>

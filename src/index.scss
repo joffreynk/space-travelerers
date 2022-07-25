@@ -16,8 +16,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   gap: 0.3rem;
 
   .logo-title {
