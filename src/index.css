@@ -53,6 +53,10 @@ body {
   text-decoration: underline;
 }
 
+.header .menu > ul .a-selected {
+  text-decoration: underline;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
