@@ -2,7 +2,7 @@ import React from 'react';
 import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
-import { Navbar } from './components/header';
+import Navbar from './components/Header';
 import Missions from './components/Missions';
 import Rockets from './components/Rockets';
 

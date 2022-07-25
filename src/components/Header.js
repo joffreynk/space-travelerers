@@ -4,12 +4,12 @@ import '../index.css';
 import { Link } from 'react-router-dom';
 import logo from '../planet.png';
 
-export const Navbar = () => (
+const Navbar = () => (
   <div className="header">
     <div className="logo-title">
       <img src={logo} className="logo" alt="logo" />
       <h1 className="header-title">
-        Space Travelers` Hub
+        ST Hub
       </h1>
     </div>
     <div className="menu">
