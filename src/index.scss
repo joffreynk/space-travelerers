@@ -1,7 +1,6 @@
 // index.scss
 
 * {
-  text-align: none;
   list-style: none;
 }
 
@@ -38,14 +37,9 @@ body {
       color: #1f81dd;
       text-decoration: none;
     }
-    a:active {
-      color: #1f81dd;
+    a.active {
       text-decoration: underline;
-    }
-
-    .a.selected {
-      color: #1f81dd;
-      text-decoration: underline;
+      font-weight: bold;
     }
   }
 }
