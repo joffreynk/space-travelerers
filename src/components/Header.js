@@ -1,7 +1,7 @@
 // header.js
 
+import { NavLink } from 'react-router-dom';
 import '../index.css';
-import { Link } from 'react-router-dom';
 import logo from '../planet.png';
 
 const Navbar = () => (
@@ -9,24 +9,29 @@ const Navbar = () => (
     <div className="logo-title">
       <img src={logo} className="logo" alt="logo" />
       <h1 className="header-title">
-        ST Hub
+        JJF`s ST Hub
       </h1>
     </div>
     <div className="menu">
       <ul>
         <li>
           {' '}
-          <Link to="/">Rockets</Link>
+          <NavLink to="/">Rockets</NavLink>
           {' '}
         </li>
         <span>|</span>
         <li>
-          <Link to="missions">Missions</Link>
+          <NavLink to="/missions">Missions</NavLink>
           {' '}
         </li>
         <span>|</span>
         <li>
-          <Link to="my-profile">My Profile</Link>
+          <NavLink to="/dragons">Dragons</NavLink>
+          {' '}
+        </li>
+        <span>|</span>
+        <li>
+          <NavLink to="/my-profile">My Profile</NavLink>
           {' '}
         </li>
       </ul>

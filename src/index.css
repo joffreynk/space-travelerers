@@ -1,5 +1,4 @@
 * {
-  text-align: none;
   list-style: none;
 }
 
@@ -49,12 +48,9 @@ body {
   text-decoration: none;
 }
 
-.header .menu > ul a:active {
+.header .menu > ul a.active {
   text-decoration: underline;
-}
-
-.header .menu > ul .a-selected {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 code {
