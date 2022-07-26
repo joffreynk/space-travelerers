@@ -4,23 +4,21 @@ import { getDragon } from '../redux/slice/dragonSlice';
 import AllDragons from './AllDragons';
 
 const DragonsContainer = () => {
-   // Using Use Selector to grab the state
-   const alldragons = useSelector((state) => state.dragon);
-   const dispatch = useDispatch();
+  // Using Use Selector to grab the state
+  const alldragons = useSelector((state) => state.dragon);
+  const dispatch = useDispatch();
 
-   useEffect(() => {
+  useEffect(() => {
     dispatch(getDragon());
   }, [alldragons.length]);
 
-
   return (
-    <Fragment>
+    <>
       {
       alldragons.length ? <AllDragons dragon={alldragons} /> : <div>No Dragon Found</div>
       }
-      </Fragment>
-  )
-  
+    </>
+  );
 };
 
 export default DragonsContainer;

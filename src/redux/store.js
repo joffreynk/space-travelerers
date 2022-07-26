@@ -4,7 +4,7 @@ import DragonReducer from './slice/dragonSlice';
 
 const rootReducer = combineReducers({
   counter: counterReducer,
-  dragon: DragonReducer
+  dragon: DragonReducer,
 });
 
 const store = configureStore({ reducer: rootReducer });

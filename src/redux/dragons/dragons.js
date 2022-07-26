@@ -1,5 +1,5 @@
 // Initial dragon
-const initial_dragon = [];
+// const initialDragon = [];
 
 // create action contants - This are calleds action types
 const GET_DRAGON = 'dragons/GET_DRAGONS';
@@ -8,13 +8,13 @@ const GET_DRAGON = 'dragons/GET_DRAGONS';
 
 // ########## Action to get dragon ###############/
 const Dragons = (dragon) => ({
-    type: GET_DRAGON,
-    payload: {
-      id: dragon.id,
-      name: dragon.name,
-      type: dragon.type,
-      flickr_images: dragon.flickr_images,
-    },
-  });
+  type: GET_DRAGON,
+  payload: {
+    id: dragon.id,
+    name: dragon.name,
+    type: dragon.type,
+    flickr_images: dragon.flickr_images,
+  },
+});
 
-  export default Dragons;
+export default Dragons;

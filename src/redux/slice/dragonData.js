@@ -1,22 +1,17 @@
-const url = "https://api.spacexdata.com/v3/dragons";
-
-const initialState = [];
+const url = 'https://api.spacexdata.com/v3/dragons';
 
 // Async Slice Drage Data
-const fetchDragon = async () => { 
+const fetchDragon = async () => {
   const response = await fetch(url);
   const data = await response.json();
-  const dragonData = data.map((dragon) => ({ 
+  const dragonData = data.map((dragon) => ({
     id: dragon.id,
     name: dragon.name,
     type: dragon.type,
-    flickr_images: dragon.flickr_images,
+    flickrImages: dragon.flickr_images[0],
   }));
 
   return dragonData;
-}
+};
 
 export default fetchDragon;
-
-
-
