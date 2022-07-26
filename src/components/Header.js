@@ -26,6 +26,11 @@ const Navbar = () => (
         </li>
         <span>|</span>
         <li>
+          <Link to="dragons">Dragons</Link>
+          {' '}
+        </li>
+        <span>|</span>
+        <li>
           <Link to="my-profile">My Profile</Link>
           {' '}
         </li>

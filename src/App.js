@@ -5,6 +5,7 @@ import {
 import Navbar from './components/Header';
 import Missions from './components/Missions';
 import Rockets from './components/Rockets';
+import Dragons from './components/Dragons';
 
 import './App.css';
 import MyProfile from './components/MyProfile';
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
+          <Route path="/dragons" element={<Dragons />} />
           <Route path="/my-profile" element={<MyProfile />} />
         </Routes>
       </BrowserRouter>
