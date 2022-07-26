@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { JOIN_MISSION, LEAVE_MISSION } from './missionsActions';
+import { JOIN_LEAVE_MISSION } from './missionsActions';
 
-import { getMissions, joinMission, leaveMission } from './missionsActionCreator';
+import { getMissions } from './missionsActionCreator';
 
 const missionsSlice = createSlice({
   name: 'missions',
@@ -11,11 +11,10 @@ const missionsSlice = createSlice({
   extraReducers: {
     [getMissions.fulfilled]: (state, action) => [...action.payload],
 
-    [joinMission.type === JOIN_MISSION]: (state, action) => state.map((mission) => (
-      mission.id === action.payload ? { ...mission, reserved: true } : mission)),
-
-    [leaveMission.type === LEAVE_MISSION]: (state, action) => state.map((mission) => (
-      mission.id === action.payload ? { ...mission, reserved: false } : mission)),
+    [JOIN_LEAVE_MISSION]: (state, action) => (
+      state.map((mission) => (
+        mission.id === action.payload ? { ...mission, reserved: !mission.reserved } : mission
+      ))),
   },
 });
 

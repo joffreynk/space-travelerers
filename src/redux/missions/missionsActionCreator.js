@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { GET_DATA, JOIN_MISSION, LEAVE_MISSION } from './missionsActions';
+import { GET_DATA, JOIN_LEAVE_MISSION } from './missionsActions';
 
 export const getMissions = createAsyncThunk(GET_DATA, async () => {
   const res = await fetch('https://api.spacexdata.com/v3/missions');
@@ -17,6 +17,4 @@ export const getMissions = createAsyncThunk(GET_DATA, async () => {
   return missionsData;
 });
 
-export const joinMission = (id) => ({ type: JOIN_MISSION, payload: id });
-
-export const leaveMission = (id) => ({ type: LEAVE_MISSION, payload: id });
+export const joinMission = (id) => ({ type: JOIN_LEAVE_MISSION, payload: id });

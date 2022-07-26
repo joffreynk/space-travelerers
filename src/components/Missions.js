@@ -8,7 +8,7 @@ const Missions = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMissions());
-  }, []);
+  }, [dispatch]);
 
   return (
     <table>

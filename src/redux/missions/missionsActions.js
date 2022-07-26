@@ -1,3 +1,2 @@
 export const GET_DATA = 'GET_DATA';
-export const JOIN_MISSION = 'JOIN_MISSION';
-export const LEAVE_MISSION = 'LEAVE_MISSION';
+export const JOIN_LEAVE_MISSION = 'JOIN_LEAVE_MISSION';
