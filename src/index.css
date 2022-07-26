@@ -50,10 +50,12 @@ body {
 }
 
 .header .menu > ul a:active {
+  color: #1f81dd;
   text-decoration: underline;
 }
 
-.header .menu > ul .a-selected {
+.header .menu > ul .a.selected {
+  color: #1f81dd;
   text-decoration: underline;
 }
 

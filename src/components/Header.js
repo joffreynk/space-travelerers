@@ -1,7 +1,7 @@
 // header.js
 
+import { NavLink } from 'react-router-dom';
 import '../index.css';
-import { Link } from 'react-router-dom';
 import logo from '../planet.png';
 
 const Navbar = () => (
@@ -16,22 +16,22 @@ const Navbar = () => (
       <ul>
         <li>
           {' '}
-          <Link to="/">Rockets</Link>
+          <NavLink to="/">Rockets</NavLink>
           {' '}
         </li>
         <span>|</span>
         <li>
-          <Link to="missions">Missions</Link>
+          <NavLink to="/missions">Missions</NavLink>
           {' '}
         </li>
         <span>|</span>
         <li>
-          <Link to="dragons">Dragons</Link>
+          <NavLink to="/dragons">Dragons</NavLink>
           {' '}
         </li>
         <span>|</span>
         <li>
-          <Link to="my-profile">My Profile</Link>
+          <NavLink to="/my-profile">My Profile</NavLink>
           {' '}
         </li>
       </ul>
