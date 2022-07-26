@@ -7,8 +7,8 @@ const GET_DRAGON = 'dragons/GET_DRAGONS';
 // Action Creators for the action constant
 
 // ########## Action to get dragon ###############/
-const getDragon = (dragon) => ({
-    type: ADD_BOOK,
+const Dragons = (dragon) => ({
+    type: GET_DRAGON,
     payload: {
       id: dragon.id,
       name: dragon.name,
@@ -16,3 +16,5 @@ const getDragon = (dragon) => ({
       flickr_images: dragon.flickr_images,
     },
   });
+
+  export default Dragons;
