@@ -8,7 +8,9 @@ const fetchDragon = async () => {
     id: dragon.id,
     name: dragon.name,
     type: dragon.type,
+    description: dragon.description,
     flickrImages: dragon.flickr_images[0],
+    reserved: false,
   }));
 
   return dragonData;

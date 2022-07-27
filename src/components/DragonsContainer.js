@@ -1,6 +1,6 @@
 import React, { useEffect, Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getDragon } from '../redux/slice/dragonSlice';
+import { getDragon } from '../redux/dragons/dragonSlice';
 import AllDragons from './AllDragons';
 
 const DragonsContainer = () => {

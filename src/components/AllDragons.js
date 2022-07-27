@@ -4,35 +4,28 @@ import SingleDragon from './SingleDragon';
 
 const AllDragons = ({ dragon }) => (
   <>
-    <table>
-      <tr>
-        <td>ID</td>
-        <td>NAME</td>
-        <td>TYPE</td>
-        <td>IMAGE</td>
-      </tr>
 
-      {dragon.map((dr) => (
-        <tr key={dr.id}>
-          <SingleDragon
-            key={dr.id}
-            id={dr.id}
-            name={dr.name}
-            type={dr.type}
-            flickrImages={dr.flickrImages}
-          />
-        </tr>
-      ))}
+    {dragon.map((dr) => (
 
-    </table>
+      <SingleDragon
+        key={dr.id}
+        id={dr.id}
+        name={dr.name}
+        type={dr.type}
+        description={dr.description}
+        flickrImages={dr.flickrImages}
+        reserved={dr.reserved}
+      />
+
+    ))}
   </>
-
 );
 
 AllDragons.propTypes = {
   dragon: PropTypes.objectOf(
     PropTypes.oneOfType([
       PropTypes.string.isRequired,
+      PropTypes.bool.isRequired,
     ]),
   ).isRequired,
 };
