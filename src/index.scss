@@ -159,17 +159,15 @@ td {
   border-collapse: collapse;
 }
 
-.missions-container,
-table {
-  .missions-head,
-  thead {
+.missions-container {
+  .missions-head {
     tr > * {
       padding: 0.8rem;
       text-align: left;
     }
   }
-  .missions-list,
-  tbody {
+
+  .missions-list {
     tr > * {
       padding: 0.8rem;
     }
@@ -184,7 +182,6 @@ table {
         display: flex;
         font-size: 1.3rem;
         font-weight: bold;
-        padding: 0.8rem;
         border: none;
       }
 
@@ -206,6 +203,7 @@ table {
           border: none 0.3rem #888;
           border-radius: 0.3rem;
         }
+
         .member-not-joined {
           white-space: nowrap;
           color: #fff;

@@ -15,7 +15,7 @@ const Missions = () => {
 
   return (
     <table className="missions-container">
-      <thead className="missions-header">
+      <thead className="missions-head">
         <tr className="missions-titles">
           <th>Mission</th>
           <th>Description</th>

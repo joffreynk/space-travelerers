@@ -126,52 +126,30 @@ td {
   border-collapse: collapse;
 }
 
-.missions-container .missions-head tr > *,
-.missions-container thead tr > *,
-table .missions-head tr > *,
-table thead tr > * {
+.missions-container .missions-head tr > * {
   padding: 0.8rem;
   text-align: left;
 }
-.missions-container .missions-list tr > *,
-.missions-container tbody tr > *,
-table .missions-list tr > *,
-table tbody tr > * {
+.missions-container .missions-list tr > * {
   padding: 0.8rem;
 }
-.missions-container .missions-list tr:nth-child(odd),
-.missions-container tbody tr:nth-child(odd),
-table .missions-list tr:nth-child(odd),
-table tbody tr:nth-child(odd) {
+.missions-container .missions-list tr:nth-child(odd) {
   background-color: rgb(211, 211, 211);
 }
-.missions-container .missions-list .row .mission-name,
-.missions-container tbody .row .mission-name,
-table .missions-list .row .mission-name,
-table tbody .row .mission-name {
+.missions-container .missions-list .row .mission-name {
   padding: 0.8rem;
   display: flex;
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 0.8rem;
   border: none;
 }
-.missions-container .missions-list .row .mission-description,
-.missions-container tbody .row .mission-description,
-table .missions-list .row .mission-description,
-table tbody .row .mission-description {
+.missions-container .missions-list .row .mission-description {
   text-align: justify;
 }
-.missions-container .missions-list .row .mission-status,
-.missions-container tbody .row .mission-status,
-table .missions-list .row .mission-status,
-table tbody .row .mission-status {
+.missions-container .missions-list .row .mission-status {
   text-align: center;
 }
-.missions-container .missions-list .row .mission-status .member-joined,
-.missions-container tbody .row .mission-status .member-joined,
-table .missions-list .row .mission-status .member-joined,
-table tbody .row .mission-status .member-joined {
+.missions-container .missions-list .row .mission-status .member-joined {
   white-space: nowrap;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -182,10 +160,7 @@ table tbody .row .mission-status .member-joined {
   border: none 0.3rem #888;
   border-radius: 0.3rem;
 }
-.missions-container .missions-list .row .mission-status .member-not-joined,
-.missions-container tbody .row .mission-status .member-not-joined,
-table .missions-list .row .mission-status .member-not-joined,
-table tbody .row .mission-status .member-not-joined {
+.missions-container .missions-list .row .mission-status .member-not-joined {
   white-space: nowrap;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -196,34 +171,22 @@ table tbody .row .mission-status .member-not-joined {
   border: solid 0.1rem #888;
   border-radius: 0.3rem;
 }
-.missions-container .missions-list .row .mission-actions,
-.missions-container tbody .row .mission-actions,
-table .missions-list .row .mission-actions,
-table tbody .row .mission-actions {
+.missions-container .missions-list .row .mission-actions {
   text-align: center;
 }
-.missions-container .missions-list .row .mission-actions *,
-.missions-container tbody .row .mission-actions *,
-table .missions-list .row .mission-actions *,
-table tbody .row .mission-actions * {
+.missions-container .missions-list .row .mission-actions * {
   white-space: nowrap;
   padding: 0.3rem;
   cursor: pointer;
 }
-.missions-container .missions-list .row .mission-actions .leave-mission,
-.missions-container tbody .row .mission-actions .leave-mission,
-table .missions-list .row .mission-actions .leave-mission,
-table tbody .row .mission-actions .leave-mission {
+.missions-container .missions-list .row .mission-actions .leave-mission {
   color: red;
   text-align: center;
   background-color: #fff;
   border: solid 0.1rem rgb(255, 0, 0);
   border-radius: 0.3rem;
 }
-.missions-container .missions-list .row .mission-actions .join-mission,
-.missions-container tbody .row .mission-actions .join-mission,
-table .missions-list .row .mission-actions .join-mission,
-table tbody .row .mission-actions .join-mission {
+.missions-container .missions-list .row .mission-actions .join-mission {
   color: #333;
   text-align: center;
   background-color: #fff;
