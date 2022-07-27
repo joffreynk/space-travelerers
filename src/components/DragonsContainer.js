@@ -9,7 +9,9 @@ const DragonsContainer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getDragon());
+    if (!alldragons.length) {
+      dispatch(getDragon());
+    }
   }, [alldragons.length]);
 
   return (
