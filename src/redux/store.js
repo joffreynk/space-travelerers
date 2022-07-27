@@ -3,8 +3,7 @@ import missionsSlice from './missions/missionsReducer';
 
 const reducer = combineReducers({
   missions: missionsSlice.reducer,
-  },
-);
+});
 
 const store = configureStore({ reducer });
 
