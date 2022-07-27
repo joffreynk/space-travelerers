@@ -2,12 +2,15 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissions } from '../redux/missions/missionsActionCreator';
 import SingleMission from './SingleMission';
+import '../missions.css';
 
 const Missions = () => {
   const missions = useSelector((store) => store.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
+    if (!missions.length) {
+      dispatch(getMissions());
+    }
   }, [dispatch]);
 
   return (
