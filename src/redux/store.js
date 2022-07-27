@@ -1,10 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import rocketsSlice from './rockets/rocketsSlice';
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
+const reducer = combineReducers(
+  {
+    rockets: rocketsSlice.reducer,
   },
-});
+);
+
+export const store = configureStore({ reducer });
 
 export default store;
