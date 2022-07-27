@@ -9,6 +9,13 @@
     "not firefox <= 101"
   ],
   "hints": {
-    "compat-api/css": "off"
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "width: fit-content"
+        ]
+      }
+    ]
   }
 }

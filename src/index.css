@@ -11,8 +11,6 @@ body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 1rem;
   -webkit-box-pack: justify;
@@ -21,30 +19,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 0.3rem;
 }
-
 .header .logo-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
   gap: 1rem;
 }
-
 .header .logo-title .logo {
   height: 3rem;
 }
-
 .header .menu > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.4rem;
 }
-
 .header .menu > ul a {
   color: #1f81dd;
   text-decoration: none;
@@ -159,4 +152,8 @@ body {
   color: #fff;
   background-color: #1f81dd;
 }
-/*# sourceMappingURL=index.css.map */
+.rockets-container .rockets-list .rocket-card .c2 .btn-reserve-rocket {
+  border: none;
+  color: #fff;
+  background-color: #1f81dd;
+}/*# sourceMappingURL=index.css.map */
