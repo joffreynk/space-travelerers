@@ -3,57 +3,115 @@
 }
 
 body {
-  margin: 0;
-  padding: 0 0.6rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
   gap: 0.3rem;
 }
-
 .header .logo-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  gap: 1rem;
 }
-
 .header .logo-title .logo {
   height: 3rem;
 }
-
 .header .menu > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.4rem;
 }
-
 .header .menu > ul a {
   color: #1f81dd;
   text-decoration: none;
 }
-
 .header .menu > ul a.active {
   text-decoration: underline;
   font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.rockets-container {
+  margin: 0;
+  padding: 0;
 }
-/*# sourceMappingURL=index.css.map */
+.rockets-container hr {
+  margin: 1rem 0;
+  padding: 0.08rem 0;
+  background-color: #ddd;
+  border: none;
+}
+.rockets-container .rockets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+.rockets-container .rockets-list .rocket-card {
+  display: flex;
+  gap: 1rem;
+}
+.rockets-container .rockets-list .rocket-card .c1 .rocket-image {
+  width: 15rem;
+}
+.rockets-container .rockets-list .rocket-card .c2 {
+  display: flex;
+  flex-direction: column;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+  color: #000;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc {
+  display: flex;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-unavailable {
+  text-align: left;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.3rem;
+  margin-right: 0.4rem;
+  border: none;
+  background-color: #008f99;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-available {
+  display: none;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-description {
+  margin: 0.2rem 0;
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.rockets-container .rockets-list .rocket-card .c2 button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.rockets-container .rockets-list .rocket-card .c2 .btn-cancel-reservation {
+  color: #555;
+  background-color: #f7f7f7;
+  border: solid 0.1rem #888;
+}
+.rockets-container .rockets-list .rocket-card .c2 .btn-reserve-rocket {
+  border: none;
+  color: #fff;
+  background-color: #1f81dd;
+}/*# sourceMappingURL=index.css.map */
