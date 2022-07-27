@@ -1,13 +1,18 @@
+// Rockets.js
+
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRockets } from '../redux/rockets/rocketsAC';
 import RocketData from './RocketData';
+import '../index.css';
 
 const Rockets = () => {
   const rockets = useSelector((store) => store.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getRockets());
+    if (!rockets.length) {
+      dispatch(getRockets());
+    }
   }, [dispatch]);
   return (
     <div className="rockets-container">
