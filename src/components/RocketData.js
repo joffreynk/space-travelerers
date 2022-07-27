@@ -37,7 +37,7 @@ const RocketData = ({ rocketData }) => {
           onClick={() => dispatch(reserveRocket(id))}
           className={`${reserved ? 'btn-cancel-reservation' : 'btn-reserve-rocket'}`}
         >
-          {reserved ? 'CANCEL RESERVATION' : 'RESERVE ROCKET'}
+          {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
         </button>
       </div>
     </li>
