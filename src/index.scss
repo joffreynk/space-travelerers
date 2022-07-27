@@ -143,11 +143,13 @@ body {
           background-color: #1f81dd;
         }
       }
+
+    a.active {
+      text-decoration: underline;
+      font-weight: bold;
     }
   }
 }
-
-// MISSIONS' STYLE //
 
 table,
 tbody,
@@ -242,6 +244,91 @@ table {
           background-color: #fff;
           border: solid 0.1rem #555;
           border-radius: 0.3rem;
+.rockets-container {
+  margin: 0;
+  padding: 0;
+
+  hr {
+    margin: 1rem 0;
+    padding: 0.08rem 0;
+    background-color: #ddd;
+    border: none;
+  }
+
+  .rockets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0 1rem;
+
+    .rocket-card {
+      display: flex;
+      gap: 1rem;
+
+      .c1 {
+        .rocket-image {
+          width: 15rem;
+        }
+      }
+
+      .c2 {
+        display: flex;
+        flex-direction: column;
+
+        .rocket-name {
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin: 0;
+          text-align: left;
+          color: #000;
+        }
+
+        .rocket-res-desc {
+          display: flex;
+
+          .rocket-unavailable {
+            text-align: left;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 0.3rem;
+            padding: 0.1rem 0.3rem;
+            margin-right: 0.4rem;
+            border: none;
+            background-color: #008f99;
+          }
+
+          .rocket-available {
+            display: none;
+          }
+
+          .rocket-description {
+            margin: 0.2rem 0;
+            text-align: justify;
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+          }
+        }
+
+        button {
+          width: fit-content;
+          padding: 0.6rem;
+          border-radius: 0.3rem;
+          cursor: pointer;
+        }
+
+        .btn-cancel-reservation {
+          color: #555;
+          background-color: #f7f7f7;
+          border: solid 0.1rem #888;
+        }
+
+        .btn-reserve-rocket {
+          border: none;
+          color: #fff;
+          background-color: #1f81dd;
         }
       }
     }

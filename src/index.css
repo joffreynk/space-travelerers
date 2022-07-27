@@ -229,4 +229,77 @@ table tbody .row .mission-actions .join-mission {
   background-color: #fff;
   border: solid 0.1rem #555;
   border-radius: 0.3rem;
+}
+.rockets-container hr {
+  margin: 1rem 0;
+  padding: 0.08rem 0;
+  background-color: #ddd;
+  border: none;
+}
+.rockets-container .rockets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+.rockets-container .rockets-list .rocket-card {
+  display: flex;
+  gap: 1rem;
+}
+.rockets-container .rockets-list .rocket-card .c1 .rocket-image {
+  width: 15rem;
+}
+.rockets-container .rockets-list .rocket-card .c2 {
+  display: flex;
+  flex-direction: column;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+  color: #000;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc {
+  display: flex;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-unavailable {
+  text-align: left;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.3rem;
+  margin-right: 0.4rem;
+  border: none;
+  background-color: #008f99;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-available {
+  display: none;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-description {
+  margin: 0.2rem 0;
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.rockets-container .rockets-list .rocket-card .c2 button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.rockets-container .rockets-list .rocket-card .c2 .btn-cancel-reservation {
+  color: #555;
+  background-color: #f7f7f7;
+  border: solid 0.1rem #888;
+}
+.rockets-container .rockets-list .rocket-card .c2 .btn-reserve-rocket {
+  border: none;
+  color: #fff;
+  background-color: #1f81dd;
 }/*# sourceMappingURL=index.css.map */
