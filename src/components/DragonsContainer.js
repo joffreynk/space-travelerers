@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getDragon } from '../redux/dragons/dragonSlice';
 import AllDragons from './AllDragons';
@@ -13,11 +13,11 @@ const DragonsContainer = () => {
   }, [alldragons.length]);
 
   return (
-    <>
+    <div className="rockets-container">
       {
       alldragons.length ? <AllDragons dragon={alldragons} /> : <div>No Dragon Found</div>
       }
-    </>
+    </div>
   );
 };
 
