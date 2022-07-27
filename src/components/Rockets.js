@@ -11,7 +11,7 @@ const Rockets = () => {
   }, [dispatch]);
   return (
     <div className="rockets-container">
-      {/* <h1>Here goes the dynamic rockets</h1> */}
+      <hr />
       <ul className="rockets-list">
         {rockets.map((rocket) => <RocketData key={rocket.id} rocketData={rocket} />)}
       </ul>

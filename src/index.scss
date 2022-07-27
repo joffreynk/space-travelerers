@@ -7,10 +7,25 @@
 body {
   margin: 0;
   padding: 0 0.6rem;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
   display: flex;
+  padding: 0 1rem;
   justify-content: space-between;
   align-items: center;
   gap: 0.3rem;
@@ -18,6 +33,7 @@ body {
   .logo-title {
     display: flex;
     align-items: center;
+    gap: 1rem;
 
     .logo {
       height: 3rem;
@@ -36,6 +52,97 @@ body {
     a.active {
       text-decoration: underline;
       font-weight: bold;
+    }
+  }
+}
+
+.rockets-container {
+  margin: 0;
+  padding: 0;
+
+  hr {
+    margin: 1rem 0;
+    padding: 0.08rem 0;
+    background-color: #ddd;
+    border: none;
+  }
+
+  .rockets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0 1rem;
+
+    .rocket-card {
+      display: flex;
+      gap: 1rem;
+
+      .c1 {
+        .rocket-image {
+          width: 15rem;
+        }
+      }
+
+      .c2 {
+        display: flex;
+        flex-direction: column;
+
+        .rocket-name {
+          font-size: 1rem;
+          margin: 0;
+          text-align: left;
+          color: #000;
+        }
+
+        .rocket-res-desc {
+          display: flex;
+
+          .rocket-unavailable {
+            text-align: left;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 0.4rem;
+            padding: 0.3rem;
+            margin-right: 0.4rem;
+            border: none;
+            background-color: #009980;
+          }
+
+          .rocket-available {
+            display: none;
+          }
+
+          .rocket-description {
+            margin: 0.2rem 0;
+            text-align: justify;
+            font-size: small;
+            line-height: 1.2rem;
+          }
+        }
+
+        button {
+          width: fit-content;
+          padding: 0.5rem;
+          border-radius: 0.4rem;
+          cursor: pointer;
+        }
+
+        .btn-cancel-reservation {
+          color: #555;
+          background-color: #f7f7f7;
+          border: solid 0.1rem #555;
+        }
+
+        .btn-reserve-rocket {
+          border: none;
+          color: #fff;
+          background-color: #1f81dd;
+          font-weight: 700;
+        }
+      }
     }
   }
 }
