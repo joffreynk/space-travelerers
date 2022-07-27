@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission } from '../redux/missions/missionsActionCreator';
+import '../index.css';
 
 const SingleMission = ({ singleMission }) => {
   const dispatch = useDispatch();
@@ -12,11 +13,19 @@ const SingleMission = ({ singleMission }) => {
     <tr id={id} className="row">
       <td className="mission-name">{mission}</td>
       <td className="mission-description">{description}</td>
-      <td className={`member ${reserved ? 'joined' : 'notJoined'}`}>
-        {reserved ? 'Active member' : 'NOT A MEMBER'}
+      <td className="mission-status">
+        <span
+          className={`${reserved ? 'member-joined' : 'member-not-joined'}`}
+        >
+          {reserved ? 'Active member' : 'NOT A MEMBER'}
+        </span>
       </td>
-      <td className={`missionAction ${reserved ? 'joined' : 'notJoined'}`}>
-        <button type="button" onClick={() => dispatch(joinMission(id))}>
+      <td className="mission-actions">
+        <button
+          className={`${reserved ? 'leave-mission' : 'join-mission'}`}
+          type="button"
+          onClick={() => dispatch(joinMission(id))}
+        >
           {reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>

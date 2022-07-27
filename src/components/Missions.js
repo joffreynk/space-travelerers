@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissions } from '../redux/missions/missionsActionCreator';
 import SingleMission from './SingleMission';
-import '../missions.css';
+import '../index.css';
 
 const Missions = () => {
   const missions = useSelector((store) => store.missions);
@@ -14,16 +14,16 @@ const Missions = () => {
   }, [dispatch]);
 
   return (
-    <table>
-      <thead>
-        <tr>
+    <table className="missions-container">
+      <thead className="missions-header">
+        <tr className="missions-titles">
           <th>Mission</th>
           <th>Description</th>
           <th>Status</th>
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="missions-list">
         {missions.map((mission) => <SingleMission key={mission.id} singleMission={mission} />)}
       </tbody>
     </table>

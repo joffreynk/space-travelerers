@@ -1,63 +1,232 @@
 * {
-  text-align: none;
   list-style: none;
 }
 
 body {
-  margin: 0;
-  padding: 0 0.6rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
   gap: 0.3rem;
 }
-
 .header .logo-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  gap: 1rem;
 }
-
 .header .logo-title .logo {
   height: 3rem;
 }
-
 .header .menu > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.4rem;
 }
-
 .header .menu > ul a {
   color: #1f81dd;
   text-decoration: none;
 }
-
-.header .menu > ul a:active {
+.header .menu > ul a.active {
   text-decoration: underline;
+  font-weight: bold;
 }
 
-.header .menu > ul .a-selected {
-  text-decoration: underline;
+.rockets-container {
+  margin: 0;
+  padding: 0;
+}
+.rockets-container hr {
+  margin: 1rem 0;
+  padding: 0.08rem 0;
+  background-color: #ddd;
+  border: none;
+}
+.rockets-container .rockets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+.rockets-container .rockets-list .rocket-card {
+  display: flex;
+  gap: 1rem;
+}
+.rockets-container .rockets-list .rocket-card .c1 .rocket-image {
+  width: 15rem;
+}
+.rockets-container .rockets-list .rocket-card .c2 {
+  display: flex;
+  flex-direction: column;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+  color: #000;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc {
+  display: flex;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-unavailable {
+  text-align: left;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.3rem;
+  margin-right: 0.4rem;
+  border: none;
+  background-color: #008f99;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-available {
+  display: none;
+}
+.rockets-container .rockets-list .rocket-card .c2 .rocket-res-desc .rocket-description {
+  margin: 0.2rem 0;
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.rockets-container .rockets-list .rocket-card .c2 button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.rockets-container .rockets-list .rocket-card .c2 .btn-cancel-reservation {
+  color: #555;
+  background-color: #f7f7f7;
+  border: solid 0.1rem #888;
+}
+.rockets-container .rockets-list .rocket-card .c2 .btn-reserve-rocket {
+  border: none;
+  color: #fff;
+  background-color: #1f81dd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+table,
+tbody,
+thead,
+tr,
+th,
+td {
+  border: 1px solid rgb(178, 178, 178);
+  border-collapse: collapse;
 }
-/*# sourceMappingURL=index.css.map */
+
+.missions-container .missions-head tr > *,
+.missions-container thead tr > *,
+table .missions-head tr > *,
+table thead tr > * {
+  padding: 0.8rem;
+  text-align: left;
+}
+.missions-container .missions-list tr > *,
+.missions-container tbody tr > *,
+table .missions-list tr > *,
+table tbody tr > * {
+  padding: 0.8rem;
+}
+.missions-container .missions-list tr:nth-child(odd),
+.missions-container tbody tr:nth-child(odd),
+table .missions-list tr:nth-child(odd),
+table tbody tr:nth-child(odd) {
+  background-color: rgb(211, 211, 211);
+}
+.missions-container .missions-list .row .mission-name,
+.missions-container tbody .row .mission-name,
+table .missions-list .row .mission-name,
+table tbody .row .mission-name {
+  padding: 0.8rem;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+}
+.missions-container .missions-list .row .mission-description,
+.missions-container tbody .row .mission-description,
+table .missions-list .row .mission-description,
+table tbody .row .mission-description {
+  text-align: justify;
+}
+.missions-container .missions-list .row .mission-status,
+.missions-container tbody .row .mission-status,
+table .missions-list .row .mission-status,
+table tbody .row .mission-status {
+  text-align: center;
+}
+.missions-container .missions-list .row .mission-status .member-joined,
+.missions-container tbody .row .mission-status .member-joined,
+table .missions-list .row .mission-status .member-joined,
+table tbody .row .mission-status .member-joined {
+  white-space: nowrap;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #008f99;
+  padding: 0.1rem 0.3rem;
+  border: none 0.3rem #888;
+  border-radius: 0.3rem;
+}
+.missions-container .missions-list .row .mission-status .member-not-joined,
+.missions-container tbody .row .mission-status .member-not-joined,
+table .missions-list .row .mission-status .member-not-joined,
+table tbody .row .mission-status .member-not-joined {
+  white-space: nowrap;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.1rem 0.3rem;
+  background-color: #555;
+  border: solid 0.1rem #888;
+  border-radius: 0.3rem;
+}
+.missions-container .missions-list .row .mission-actions,
+.missions-container tbody .row .mission-actions,
+table .missions-list .row .mission-actions,
+table tbody .row .mission-actions {
+  text-align: center;
+}
+.missions-container .missions-list .row .mission-actions *,
+.missions-container tbody .row .mission-actions *,
+table .missions-list .row .mission-actions *,
+table tbody .row .mission-actions * {
+  white-space: nowrap;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.missions-container .missions-list .row .mission-actions .leave-mission,
+.missions-container tbody .row .mission-actions .leave-mission,
+table .missions-list .row .mission-actions .leave-mission,
+table tbody .row .mission-actions .leave-mission {
+  color: red;
+  text-align: center;
+  background-color: #fff;
+  border: solid 0.1rem rgb(255, 0, 0);
+  border-radius: 0.3rem;
+}
+.missions-container .missions-list .row .mission-actions .join-mission,
+.missions-container tbody .row .mission-actions .join-mission,
+table .missions-list .row .mission-actions .join-mission,
+table tbody .row .mission-actions .join-mission {
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+  border: solid 0.1rem #555;
+  border-radius: 0.3rem;
+}/*# sourceMappingURL=index.css.map */
