@@ -1,5 +1,7 @@
 import React from 'react';
 import RocketsProfile from './my-profile/rockets-profile';
+import MissionsProfile from './my-profile/missions-profile';
+import DragonsProfile from './my-profile/dragons-profile';
 import '../index.css';
 
 const MyProfile = () => (
@@ -8,12 +10,10 @@ const MyProfile = () => (
       <RocketsProfile />
     </div>
     <div className="cp2">
-      Missions profile
-      <RocketsProfile />
+      <MissionsProfile />
     </div>
     <div className="cp3">
-      Dragons profile
-      <RocketsProfile />
+      <DragonsProfile />
     </div>
   </div>
 );
