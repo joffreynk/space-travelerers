@@ -14,19 +14,22 @@ const Missions = () => {
   }, [dispatch]);
 
   return (
-    <table className="missions-container">
-      <thead className="missions-head">
-        <tr className="missions-titles">
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody className="missions-list">
-        {missions.map((mission) => <SingleMission key={mission.id} singleMission={mission} />)}
-      </tbody>
-    </table>
+    <div className="missions-pre-container">
+      <hr />
+      <table className="missions-container">
+        <thead className="missions-head">
+          <tr className="missions-titles">
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody className="missions-list">
+          {missions.map((mission) => <SingleMission key={mission.id} singleMission={mission} />)}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

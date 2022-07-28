@@ -16,6 +16,7 @@ const DragonsContainer = () => {
 
   return (
     <div className="rockets-container">
+      <hr />
       {
       alldragons.length ? <AllDragons dragon={alldragons} /> : <div>No Dragon Found</div>
       }

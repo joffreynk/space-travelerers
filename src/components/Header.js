@@ -9,7 +9,7 @@ const Navbar = () => (
     <div className="logo-title">
       <img src={logo} className="logo" alt="logo" />
       <h1 className="header-title">
-        JJF`s ST Hub
+        JJF Space Travelers hub
       </h1>
     </div>
     <div className="menu">
@@ -35,6 +35,9 @@ const Navbar = () => (
           {' '}
         </li>
       </ul>
+    </div>
+    <div className="h-line">
+      <hr />
     </div>
   </div>
 );
