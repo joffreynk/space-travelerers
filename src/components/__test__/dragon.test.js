@@ -19,16 +19,7 @@ describe('Dragon Component Rendering ', () => {
     expect(Tree).toMatchSnapshot();
   });
 
-  it('renders correctly', () => {
-    const tree = renderer
-      .create(
-        <Provider store={store}>
-          <DragonsContainer />
-        </Provider>,
-      );
-    expect(tree).toMatchSnapshot();
-  });
-  
+   
 });
 
  
