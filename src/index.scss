@@ -245,3 +245,41 @@ td {
     }
   }
 }
+
+.all-profiles-container {
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  // background-color: #008f99;
+
+  .cp1,
+  .cp2,
+  .cp3 {
+    width: 100%;
+    margin: 0.4rem;
+    padding: 0.4rem;
+  }
+
+  * > .pf-container {
+    width: 100%;
+
+    .pf-title {
+      margin: 0.2rem;
+      padding: 0.2rem 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    .pf-table {
+      width: 100%;
+
+      .pf-item-list {
+        .pf-item {
+          .pf-item-name {
+            padding: 0.9rem 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

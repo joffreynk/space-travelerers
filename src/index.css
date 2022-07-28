@@ -192,4 +192,32 @@ td {
   background-color: #fff;
   border: solid 0.1rem #555;
   border-radius: 0.3rem;
+}
+
+.all-profiles-container {
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.all-profiles-container .cp1,
+.all-profiles-container .cp2,
+.all-profiles-container .cp3 {
+  width: 100%;
+  margin: 0.4rem;
+  padding: 0.4rem;
+}
+.all-profiles-container * > .pf-container {
+  width: 100%;
+}
+.all-profiles-container * > .pf-container .pf-title {
+  margin: 0.2rem;
+  padding: 0.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.all-profiles-container * > .pf-container .pf-table {
+  width: 100%;
+}
+.all-profiles-container * > .pf-container .pf-table .pf-item-list .pf-item .pf-item-name {
+  padding: 0.9rem 0.6rem;
 }/*# sourceMappingURL=index.css.map */
