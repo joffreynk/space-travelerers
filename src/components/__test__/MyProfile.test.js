@@ -1,8 +1,8 @@
-// Rockets.test.js
+// MyProfile.test.js
 
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import Rockets from '../Rockets';
+import MyProfile from '../MyProfile';
 import store from '../../redux/store';
 
 describe(' Rockets Component Rendering ', () => {
@@ -10,7 +10,7 @@ describe(' Rockets Component Rendering ', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <Rockets />
+          <MyProfile />
         </Provider>,
       );
     expect(tree).toMatchSnapshot();
