@@ -7,7 +7,6 @@ import DragonsContainer from '../DragonsContainer';
 import store from '../../redux/store';
 
 describe('Dragon Component Rendering ', () => {
-
   it('Matches snapshot', () => {
     const Tree = renderer.create(
       <MemoryRouter>
@@ -18,9 +17,4 @@ describe('Dragon Component Rendering ', () => {
     ).toJSON();
     expect(Tree).toMatchSnapshot();
   });
-
-   
 });
-
- 
-
