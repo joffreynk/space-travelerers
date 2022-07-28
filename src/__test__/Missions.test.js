@@ -5,12 +5,12 @@ import store from '../redux/store';
 
 describe(' Missions Component Rendering ', () => {
   it('renders correctly', () => {
-    const tree = renderer
+    const tested = renderer
       .create(
         <Provider store={store}>
           <Missions />
         </Provider>,
       );
-    expect(tree).toMatchSnapshot();
+    expect(tested).toMatchSnapshot();
   });
 });
