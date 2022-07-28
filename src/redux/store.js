@@ -1,12 +1,12 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
 import DragonReducer from './dragons/dragonSlice';
+import missionsSlice from './missions/missionsReducer';
 
-const rootReducer = combineReducers({
-  counter: counterReducer,
+const reducer = combineReducers({
+  missions: missionsSlice.reducer,
   dragon: DragonReducer,
 });
 
-const store = configureStore({ reducer: rootReducer });
+const store = configureStore({ reducer });
 
 export default store;
