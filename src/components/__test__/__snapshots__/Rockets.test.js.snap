@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Missions Component Rendering  renders correctly 1`] = `
+<div
+  className="rockets-container"
+>
+  <hr />
+  <ul
+    className="rockets-list"
+  />
+</div>
+`;
+
+exports[` Rockets Component Rendering  renders correctly 1`] = `
+<div
+  className="rockets-container"
+>
+  <hr />
+  <ul
+    className="rockets-list"
+  />
+</div>
+`;
