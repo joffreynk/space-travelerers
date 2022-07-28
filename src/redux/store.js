@@ -1,15 +1,14 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import rocketsSlice from './rockets/rocketsSlice';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import DragonReducer from './dragons/dragonSlice';
-// import missionsSlice from './missions/missionsReducer';
+import missionsSlice from './missions/missionsReducer';
+import rocketsSlice from './rockets/rocketsSlice';
 
-const rootReducer = combineReducers({
+const reducer = combineReducers({
+  missions: missionsSlice.reducer,
   rockets: rocketsSlice.reducer,
   dragon: DragonReducer,
 });
 
-// export const store = configureStore({ reducer });
-
-const store = configureStore({ reducer: rootReducer });
+const store = configureStore({ reducer });
 
 export default store;

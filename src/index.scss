@@ -146,3 +146,102 @@ body {
     }
   }
 }
+
+// MISSIONS' STYLE //
+
+table,
+tbody,
+thead,
+tr,
+th,
+td {
+  border: 1px solid rgb(178, 178, 178);
+  border-collapse: collapse;
+}
+
+.missions-container {
+  .missions-head {
+    tr > * {
+      padding: 0.8rem;
+      text-align: left;
+    }
+  }
+
+  .missions-list {
+    tr > * {
+      padding: 0.8rem;
+    }
+
+    tr:nth-child(odd) {
+      background-color: rgb(211, 211, 211);
+    }
+
+    .row {
+      .mission-name {
+        padding: 0.8rem;
+        display: flex;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: none;
+      }
+
+      .mission-description {
+        text-align: justify;
+      }
+
+      .mission-status {
+        text-align: center;
+
+        .member-joined {
+          white-space: nowrap;
+          color: #fff;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.8rem;
+          font-weight: bold;
+          background-color: #008f99;
+          padding: 0.1rem 0.3rem;
+          border: none 0.3rem #888;
+          border-radius: 0.3rem;
+        }
+
+        .member-not-joined {
+          white-space: nowrap;
+          color: #fff;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.8rem;
+          font-weight: bold;
+          padding: 0.1rem 0.3rem;
+          background-color: #555;
+          border: solid 0.1rem #888;
+          border-radius: 0.3rem;
+        }
+      }
+
+      .mission-actions {
+        text-align: center;
+
+        * {
+          white-space: nowrap;
+          padding: 0.3rem;
+          cursor: pointer;
+        }
+
+        .leave-mission {
+          color: red;
+          text-align: center;
+          background-color: #fff;
+          border: solid 0.1rem rgb(255, 0, 0);
+          border-radius: 0.3rem;
+        }
+
+        .join-mission {
+          color: #333;
+          text-align: center;
+          background-color: #fff;
+          border: solid 0.1rem #555;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+  }
+}
