@@ -126,30 +126,36 @@ td {
   border-collapse: collapse;
 }
 
-.missions-container .missions-head tr > * {
+.missions-pre-container hr {
+  margin: 1rem 0;
+  padding: 0.08rem 0;
+  background-color: #ddd;
+  border: none;
+}
+.missions-pre-container .missions-container .missions-head tr > * {
   padding: 0.8rem;
   text-align: left;
 }
-.missions-container .missions-list tr > * {
+.missions-pre-container .missions-container .missions-list tr > * {
   padding: 0.8rem;
 }
-.missions-container .missions-list tr:nth-child(odd) {
+.missions-pre-container .missions-container .missions-list tr:nth-child(odd) {
   background-color: rgb(211, 211, 211);
 }
-.missions-container .missions-list .row .mission-name {
+.missions-pre-container .missions-container .missions-list .row .mission-name {
   padding: 0.8rem;
   display: flex;
   font-size: 1.3rem;
   font-weight: bold;
   border: none;
 }
-.missions-container .missions-list .row .mission-description {
+.missions-pre-container .missions-container .missions-list .row .mission-description {
   text-align: justify;
 }
-.missions-container .missions-list .row .mission-status {
+.missions-pre-container .missions-container .missions-list .row .mission-status {
   text-align: center;
 }
-.missions-container .missions-list .row .mission-status .member-joined {
+.missions-pre-container .missions-container .missions-list .row .mission-status .member-joined {
   white-space: nowrap;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -160,7 +166,7 @@ td {
   border: none 0.3rem #888;
   border-radius: 0.3rem;
 }
-.missions-container .missions-list .row .mission-status .member-not-joined {
+.missions-pre-container .missions-container .missions-list .row .mission-status .member-not-joined {
   white-space: nowrap;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -171,22 +177,22 @@ td {
   border: solid 0.1rem #888;
   border-radius: 0.3rem;
 }
-.missions-container .missions-list .row .mission-actions {
+.missions-pre-container .missions-container .missions-list .row .mission-actions {
   text-align: center;
 }
-.missions-container .missions-list .row .mission-actions * {
+.missions-pre-container .missions-container .missions-list .row .mission-actions * {
   white-space: nowrap;
   padding: 0.3rem;
   cursor: pointer;
 }
-.missions-container .missions-list .row .mission-actions .leave-mission {
+.missions-pre-container .missions-container .missions-list .row .mission-actions .leave-mission {
   color: red;
   text-align: center;
   background-color: #fff;
   border: solid 0.1rem rgb(255, 0, 0);
   border-radius: 0.3rem;
 }
-.missions-container .missions-list .row .mission-actions .join-mission {
+.missions-pre-container .missions-container .missions-list .row .mission-actions .join-mission {
   color: #333;
   text-align: center;
   background-color: #fff;
@@ -194,30 +200,36 @@ td {
   border-radius: 0.3rem;
 }
 
-.all-profiles-container {
+.pre-pf-container hr {
+  margin: 1rem 0;
+  padding: 0.08rem 0;
+  background-color: #ddd;
+  border: none;
+}
+.pre-pf-container .all-profiles-container {
   padding: 0.2rem;
   display: flex;
   justify-content: space-between;
 }
-.all-profiles-container .cp1,
-.all-profiles-container .cp2,
-.all-profiles-container .cp3 {
+.pre-pf-container .all-profiles-container .cp1,
+.pre-pf-container .all-profiles-container .cp2,
+.pre-pf-container .all-profiles-container .cp3 {
   width: 100%;
   margin: 0.4rem;
   padding: 0.4rem;
 }
-.all-profiles-container * > .pf-container {
+.pre-pf-container .all-profiles-container * > .pf-container {
   width: 100%;
 }
-.all-profiles-container * > .pf-container .pf-title {
+.pre-pf-container .all-profiles-container * > .pf-container .pf-title {
   margin: 0.2rem;
   padding: 0.2rem 0;
   font-size: 1.6rem;
   font-weight: 400;
 }
-.all-profiles-container * > .pf-container .pf-table {
+.pre-pf-container .all-profiles-container * > .pf-container .pf-table {
   width: 100%;
 }
-.all-profiles-container * > .pf-container .pf-table .pf-item-list .pf-item .pf-item-name {
+.pre-pf-container .all-profiles-container * > .pf-container .pf-table .pf-item-list .pf-item .pf-item-name {
   padding: 0.9rem 0.6rem;
 }/*# sourceMappingURL=index.css.map */

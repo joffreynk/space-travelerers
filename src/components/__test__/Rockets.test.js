@@ -1,14 +1,16 @@
+// Rockets.test.js
+
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import Missions from '../components/Missions';
-import store from '../redux/store';
+import Rockets from '../Rockets';
+import store from '../../redux/store';
 
-describe(' Missions Component Rendering ', () => {
+describe(' Rockets Component Rendering ', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <Missions />
+          <Rockets />
         </Provider>,
       );
     expect(tree).toMatchSnapshot();

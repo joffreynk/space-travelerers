@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dragon Component Rendering  Matches snapshot 1`] = `
+<div
+  className="rockets-container"
+>
+  <div>
+    No Dragon Found
+  </div>
+</div>
+`;
+
+exports[`Dragon Component Rendering  renders correctly 1`] = `
+<div
+  className="rockets-container"
+>
+  <div>
+    No Dragon Found
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  className="rockets-container"
+>
+  <div>
+    No Dragon Found
+  </div>
+</div>
+`;

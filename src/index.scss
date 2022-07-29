@@ -159,123 +159,141 @@ td {
   border-collapse: collapse;
 }
 
-.missions-container {
-  .missions-head {
-    tr > * {
-      padding: 0.8rem;
-      text-align: left;
-    }
+.missions-pre-container {
+  hr {
+    margin: 1rem 0;
+    padding: 0.08rem 0;
+    background-color: #ddd;
+    border: none;
   }
 
-  .missions-list {
-    tr > * {
-      padding: 0.8rem;
-    }
-
-    tr:nth-child(odd) {
-      background-color: rgb(211, 211, 211);
-    }
-
-    .row {
-      .mission-name {
+  .missions-container {
+    .missions-head {
+      tr > * {
         padding: 0.8rem;
-        display: flex;
-        font-size: 1.3rem;
-        font-weight: bold;
-        border: none;
+        text-align: left;
+      }
+    }
+
+    .missions-list {
+      tr > * {
+        padding: 0.8rem;
       }
 
-      .mission-description {
-        text-align: justify;
+      tr:nth-child(odd) {
+        background-color: rgb(211, 211, 211);
       }
 
-      .mission-status {
-        text-align: center;
-
-        .member-joined {
-          white-space: nowrap;
-          color: #fff;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 0.8rem;
+      .row {
+        .mission-name {
+          padding: 0.8rem;
+          display: flex;
+          font-size: 1.3rem;
           font-weight: bold;
-          background-color: #008f99;
-          padding: 0.1rem 0.3rem;
-          border: none 0.3rem #888;
-          border-radius: 0.3rem;
+          border: none;
         }
 
-        .member-not-joined {
-          white-space: nowrap;
-          color: #fff;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 0.8rem;
-          font-weight: bold;
-          padding: 0.1rem 0.3rem;
-          background-color: #555;
-          border: solid 0.1rem #888;
-          border-radius: 0.3rem;
-        }
-      }
-
-      .mission-actions {
-        text-align: center;
-
-        * {
-          white-space: nowrap;
-          padding: 0.3rem;
-          cursor: pointer;
+        .mission-description {
+          text-align: justify;
         }
 
-        .leave-mission {
-          color: red;
+        .mission-status {
           text-align: center;
-          background-color: #fff;
-          border: solid 0.1rem rgb(255, 0, 0);
-          border-radius: 0.3rem;
+
+          .member-joined {
+            white-space: nowrap;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+            background-color: #008f99;
+            padding: 0.1rem 0.3rem;
+            border: none 0.3rem #888;
+            border-radius: 0.3rem;
+          }
+
+          .member-not-joined {
+            white-space: nowrap;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0.1rem 0.3rem;
+            background-color: #555;
+            border: solid 0.1rem #888;
+            border-radius: 0.3rem;
+          }
         }
 
-        .join-mission {
-          color: #333;
+        .mission-actions {
           text-align: center;
-          background-color: #fff;
-          border: solid 0.1rem #555;
-          border-radius: 0.3rem;
+
+          * {
+            white-space: nowrap;
+            padding: 0.3rem;
+            cursor: pointer;
+          }
+
+          .leave-mission {
+            color: red;
+            text-align: center;
+            background-color: #fff;
+            border: solid 0.1rem rgb(255, 0, 0);
+            border-radius: 0.3rem;
+          }
+
+          .join-mission {
+            color: #333;
+            text-align: center;
+            background-color: #fff;
+            border: solid 0.1rem #555;
+            border-radius: 0.3rem;
+          }
         }
       }
     }
   }
 }
 
-.all-profiles-container {
-  padding: 0.2rem;
-  display: flex;
-  justify-content: space-between;
-
-  .cp1,
-  .cp2,
-  .cp3 {
-    width: 100%;
-    margin: 0.4rem;
-    padding: 0.4rem;
+.pre-pf-container {
+  hr {
+    margin: 1rem 0;
+    padding: 0.08rem 0;
+    background-color: #ddd;
+    border: none;
   }
 
-  * > .pf-container {
-    width: 100%;
+  .all-profiles-container {
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-between;
 
-    .pf-title {
-      margin: 0.2rem;
-      padding: 0.2rem 0;
-      font-size: 1.6rem;
-      font-weight: 400;
+    .cp1,
+    .cp2,
+    .cp3 {
+      width: 100%;
+      margin: 0.4rem;
+      padding: 0.4rem;
     }
 
-    .pf-table {
+    * > .pf-container {
       width: 100%;
 
-      .pf-item-list {
-        .pf-item {
-          .pf-item-name {
-            padding: 0.9rem 0.6rem;
+      .pf-title {
+        margin: 0.2rem;
+        padding: 0.2rem 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+      .pf-table {
+        width: 100%;
+
+        .pf-item-list {
+          .pf-item {
+            .pf-item-name {
+              padding: 0.9rem 0.6rem;
+            }
           }
         }
       }

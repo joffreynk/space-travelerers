@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Rockets Component Rendering  renders correctly 1`] = `
+<div
+  className="all-profiles-container"
+>
+  <div
+    className="cp1"
+  >
+    <div
+      className="pf-container"
+    >
+      <h2
+        className="pf-title"
+      >
+        My Rockets
+      </h2>
+      <table
+        className="pf-table"
+      >
+        <tbody
+          className="pf-item-list"
+        />
+      </table>
+    </div>
+  </div>
+  <div
+    className="cp2"
+  >
+    <div
+      className="pf-container"
+    >
+      <h2
+        className="pf-title"
+      >
+        My Missions
+      </h2>
+      <table
+        className="pf-table"
+      >
+        <tbody
+          className="pf-item-list"
+        />
+      </table>
+    </div>
+  </div>
+  <div
+    className="cp3"
+  >
+    <div
+      className="pf-container"
+    >
+      <h2
+        className="pf-title"
+      >
+        My Dragons
+      </h2>
+      <table
+        className="pf-table"
+      >
+        <tbody
+          className="pf-item-list"
+        />
+      </table>
+    </div>
+  </div>
+</div>
+`;
