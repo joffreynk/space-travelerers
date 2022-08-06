@@ -10,7 +10,7 @@ This is a React/Redux project for educational purposes only.
 - CSS3
 
 ## 📺 Live Demo
-Live version: NOT YET
+- Netlify: [https://jl-sth.netlify.app/](https://jl-sth.netlify.app/)
 
 ## ⚙️ Installation
 
